@@ -1,2 +1,0 @@
-Sveiki skaitantys.
-
