@@ -1,1 +1,2 @@
-Laba diena, Kentaurai.
+Sveiki skaitantys.
+
