@@ -1,0 +1,31 @@
+body {
+  margin: 0px;
+  background-color:#1d2a35!important ;
+}
+
+span{
+  color:skyblue;
+}
+
+i{
+  color:pink;
+  font-size: 80px;
+  vertical-align: middle;
+}
+
+h1, h2 {
+  color: #f3f3f3;
+  font-size: 50px;
+  line-height: 1.5;
+  letter-spacing: 4px;
+  padding: 20px;
+  margin: 0px;
+  border: 2px solid white;
+  display: inline-block;
+  width: 50%;
+  box-sizing:border-box;
+
+}
+div{
+  font-size: 0px;
+}
