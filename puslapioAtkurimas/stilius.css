@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  position: relative;
+  overflow: hidden;
+}
+
+.header-image {
+  height: 300px; /* Adjust height according to your image */
+  background-image:url(//parallax-theme-aspen.myshopify.com/cdn/shop/files/banner-boots_2000x.jpg?v=1614819012);
+  background-size: cover;
+  background-position: center;
+}
+
+nav {
+  position: absolute;
+  top: 20px; /* Adjust position as needed */
+  left: 20px; /* Adjust position as needed */
+  /* Additional styling for navigation */
+}
+
+main {
+  padding: 20px;
+}
+
+
