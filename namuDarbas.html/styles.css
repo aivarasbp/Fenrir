@@ -25,9 +25,11 @@ nav a:hover {
 .h2txt{
 margin: 10px;
 text-align: left;
+color:goldenrod;
 }
 i{
   font-size: 1em;
+  color:whitesmoke;
 }
 .title{
   font-size: 2em;
