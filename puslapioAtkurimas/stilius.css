@@ -1,44 +1,138 @@
-/* .js-header {
-  display: block;
-  background-color: #c3b68e;
-  color: #fff;
-  font-size: 16px;
-  font-weight: 700;
-  text-align: center;
-  line-height: 40px;
-  height: 40px;
-  padding: 0 50px;
-  z-index: 9999;
-  width: 100%;
-  opacity: .95;
-  top: 0;
-  box-sizing: border-box;
-} */
 body {
-  margin: 0px;
+  margin: 0;
+  padding: 0;
 }
 
-.parallax {
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
+.layout {
   width: 100%;
-  top: 10px;
-  overflow: hidden;
 }
 
-.parallax h1 {
-  background-attachment: fixed;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
-  color: white;
-  position: absolute;
-  top: 50%;
-  left: 70%;
-  transform: translate(-50%, -50%);
-  max-width: 55%;
-  padding: 50px 10px;
+.bin {
+  width: 100%;
   display: flex;
+  justify-content: flex-start;
+  position: relative;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+}
+
+.bin.menu {
+  background-color: transparent;
+
+}
+
+nav {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+
+}
+
+nav ul li a:hover {
+  color: #677e4b;
+}
+
+.cart-icon {
+  width: 20px;
+  height: 20px;
+  fill: rgb(255, 255, 255);
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+nav ul li svg:hover {
+  color: #677e4b;
+}
+
+.img-container {
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.img1 {
+  width: 100%;
+  height: fit-content;
+  object-fit: cover;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+}
+
+.headline {
+  align-items: flex-end;
+  position: absolute;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.expandable {
+  position: relative;
+}
+
+.expandable .choices {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #cabe9b;
+  padding: 5px 0;
+  border: none;
+}
+
+.expandable:hover .choices {
+  display: block;
+
+}
+
+.expandable:hover .choices li {
+  display: block;
+}
+
+.expandable .choices li {
+  display: none;
+}
+
+.expandable .choices li a {
+  display: flex;
+  padding: 5px;
+  padding-right: 60px;
+  text-decoration: none;
+  color: white;
+}
+
+.expandable .choices li a:hover {
+  background-color: transparent;
+  color: #677e4b;
+  transition: 0.5s;
 }
