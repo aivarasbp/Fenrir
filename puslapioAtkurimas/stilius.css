@@ -4,52 +4,8 @@ body {
   border: 0;
   font-family: "Prompt", sans-serif;
   text-transform: none;
-  color: #363636;
+  color: #000000;
   overflow-wrap: break-word;
-}
-
-.layout {
-  width: 100%;
-}
-
-.bin {
-  width: 100%;
-  display: flex;
-  justify-content: flex-start;
-  position: relative;
-}
-
-.container {
-  width: 100%;
-  max-width: 1200px;
-}
-
-.header_secondary-navigation {
-  display: flex;
-  z-index: 5;
-  position: relative;
-  flex: 0 0 auto;
-  padding-left: 20px;
-  text-align: right;
-  max-width: 50%;
-}
-
-.bin.menu {
-  background-color: transparent;
-
-}
-
-.headline {
-  position: relative;
-  display: inline-block;
-  text-align: right;
-  justify-content: flex-end;
-  overflow-wrap: initial;
-}
-
-.banner_inner-text {
-  display: flex;
-  text-align: right;
 }
 
 nav {
@@ -98,7 +54,6 @@ nav ul li a:hover {
   width: 20px;
   height: 20px;
   fill: rgb(255, 255, 255);
-  margin-left: 2px;
   cursor: pointer;
 }
 
@@ -111,7 +66,6 @@ nav ul li a:hover {
   width: 20px;
   height: 20px;
   fill: rgb(255, 255, 255);
-  margin-left: 2px;
   cursor: pointer;
 }
 
@@ -124,20 +78,12 @@ nav ul li a:hover {
   width: 20px;
   height: 20px;
   fill: rgb(255, 255, 255);
-  margin-left: 2px;
   cursor: pointer;
 }
 
 .bi-cart3:hover {
   fill: #677e4b;
   transition: 0.1s;
-}
-
-.headline {
-  align-items: flex-end;
-  position: absolute;
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 .expandable {
@@ -171,7 +117,7 @@ nav ul li a:hover {
   padding: 5px;
   padding-right: 60px;
   text-decoration: none;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 .expandable .choices li a:hover {
@@ -180,36 +126,49 @@ nav ul li a:hover {
   transition: 0.5s;
 }
 
-div {
-  display: flex;
-}
-
-h1 {
-  align-items: flex-end;
+.banner_inner-text {
+  align-items: flex;
   justify-content: center;
   position: absolute;
-}
 
-h2 {
-  font-size: 26px;
-  line-height: 1.8em;
-  margin: 0 auto 15px;
-  clear: both;
-  font-weight: 800;
-  padding-top: 4px;
-  color: #363636;
-  text-align: center;
-  justify-content: center;
 }
 
 .explore-container {
-  text-align: center;
-  display: flex;
-}
-
-.img1 {
-  background-size: cover;
-  background-attachment: fixed;
+  background-image: url("./Untitled.png");
   width: 100%;
   height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.headerText {
+  width: 80%;
+  display: flex;
+  height: 80vh;
+  justify-content: end;
+  align-items: end;
+
+}
+
+.textHeader {
+  width: 380px;
+  height: 100px;
+  color: white;
+}
+
+.layer2Head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.layer2p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
 }
