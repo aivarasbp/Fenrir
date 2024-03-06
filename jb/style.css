@@ -1,0 +1,164 @@
+* {
+  letter-spacing: 5px;
+}
+
+i {
+  color: steelblue;
+}
+
+.big {
+  font-size: 2em;
+  color: greenyellow;
+}
+
+.big .small {
+  font-size: 0.5em;
+  color: crimson;
+}
+
+.big .small {
+  font-size: 3.5em;
+  color: lightcoral;
+}
+
+#big {
+  font-size: 2em;
+  color: darkslateblue;
+  font-weight: bold;
+}
+
+#big.small {
+  font-size: 0.3em;
+  color: darkorange;
+}
+
+button {
+  font-size: 1.5em;
+  color: darkorchid;
+  background-color: lightgray;
+  border: black;
+  border-radius: 6px;
+  padding: 5px;
+  margin: 5px;
+
+}
+
+button[type="submit"] {
+  background-color: lightblue;
+  border: darkred;
+
+}
+
+button[type="reset"] {
+  background-color: lightcoral;
+  border: 1px solid darkgreen;
+}
+
+.span-1,
+.span-2 {
+  font-size: 1.5em;
+  color: darkslategray;
+  padding: 10px;
+  margin: 10px;
+}
+
+.parent>p {
+  color: orchid;
+  font-weight: bold;
+}
+
+p+h2 {
+  color: deepskyblue;
+}
+
+h2+h3 {
+  color: darkorange;
+}
+
+h5~span {
+  font-weight: bold;
+  color: crimson;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+ul li {
+  display: inline-block;
+  border-bottom: 1px solid darkslateblue;
+}
+
+ul li:nth-child(odd) {
+  color: magenta;
+}
+
+ul li:last-child {
+  border: none;
+}
+
+label {
+  user-select: none;
+  cursor: pointer;
+}
+
+.after {
+  font-size: 60px;
+}
+
+[type="checkbox"] {
+  display: none;
+}
+
+[type="checkbox"]:checked+div {
+  color: lightpink;
+}
+
+.bin {
+  display: flex;
+  margin: 50px;
+  justify-content: center;
+}
+
+.sq {
+  border-color: slateblue;
+  fill: slateblue;
+  width: 100px;
+  height: 100px;
+  animation-name: spinning;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes example {
+  0% {
+    background-color: blueviolet;
+    transform: rotate(0deg);
+  }
+
+  25% {
+    background-color: blue;
+    transform: rotate(90deg)
+  }
+
+  50% {
+    background-color: skyblue;
+    transform: rotate(180deg)
+  }
+
+  75% {
+    background-color: darkseagreen;
+    transform: rotate(270deg)
+  }
+
+  100% {
+    background-color: lightblue;
+    transform: rotate(360deg);
+  }
+}
