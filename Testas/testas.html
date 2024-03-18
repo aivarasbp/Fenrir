@@ -28,10 +28,224 @@
       background-color: blue;
     }
 
+    .footer form {
+  margin-bottom: 0;
+}
+.footer .footer__title {
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+.footer .footer__follow-on-shop {
+  margin-bottom: 20px;
+}
+.footer p {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #ffffff;
+}
+.footer a {
+  color: #ffffff;
+  font-size: 14px;
+}
+.footer a:hover, .footer a:active {
+  color: #677e4b;
+}
+
+.footer_menu {
+  margin: 0;
+  list-style: none;
+}
+.footer_menu li {
+  padding-right: 20px;
+  display: inline-block;
+}
+.footer_menu li a {
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+.footer_menu li a:hover {
+  color: #677e4b;
+}
+.footer_menu li a.ss-icon {
+  font-size: 55px;
+}
+
+.footer__info {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+@media only screen and (max-width: 798px) {
+  .footer__info {
+    flex-direction: column;
+  }
+}
+
+.selectors-form__locale + .selectors-form__currency {
+  margin-left: 10px;
+}
+
+.index .footer {
+  margin-top: 0;
+}
+
+.page-contact .footer {
+  margin-top: 0;
+}
+.page-contact .maps {
+  bottom: -6px;
+  position: relative;
+}
+
+.maps iframe {
+  display: block;
+}
+
+.sub-footer .social_icons li {
+  display: inline;
+  padding-right: 10px;
+}
+
+.payment_methods {
+  margin: 4px 0 6px 0;
+  filter: alpha(opacity=80);
+  opacity: 0.9;
+}
+.payment_methods svg {
+  width: 48px;
+  height: 30px;
+  padding-right: 4px;
+}
+
+.credits_right {
+  text-align: right;
+}
+
+h5,
+.h5 {
+  font-size: 18px;
+  padding-bottom: 1em;
+}
+
+h5.sub-title {
+  padding: 5px 0;
+  color: #363636;
+}
+
+h5.sub-title a {
+  color: #363636;
+  text-decoration: none;
+  font-weight: 1000;
+  font-size: 18px;
+}
+
+.article,
+.article_image {
+  display: block;
+  padding-bottom: 30px;
+}
+
+body.article {
+  padding-bottom: 0;
+}
+
+.toggle span {
+  width: 25px;
+  text-align: center;
+  color: #363636;
+  font-weight: bold;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: smaller;
+  float: right;
+  display: none;
+}
+@media only screen and (max-width: 798px) {
+  .toggle span {
+    display: block;
+  }
+}
+
+
   </style>
 </head>
 <body>
   
+  <div class="three-sevenths columns medium-down--one-whole">
+                
+    <h6 class="footer__title">Follow</h6>
+  
+    <div class="js-social-icons">
+      <div class="social-icons">
+
+<a href="#" title="Parallax Theme Aspen on Facebook" class="ss-icon" rel="me" target="_blank">
+<span class="icon-facebook"></span>
+</a>
+
+<a href="#" title="Parallax Theme Aspen on YouTube" class="ss-icon" rel="me" target="_blank">
+<span class="icon-youtube"></span>
+</a>
+
+<a href="#" title="Parallax Theme Aspen on Instagram" class="ss-icon" rel="me" target="_blank">
+<span class="icon-instagram"></span>
+</a>
+</div>
+    </div>
+  
+    <p>This is a demo shop for the Parallax Shopify theme.&nbsp;Products shown are courtesy of <a href="https://rockrun.com/" target="_blank" title="https://rockrun.com/">Rock + Run</a> and <a href="https://www.oberlo.com/" title="https://www.oberlo.com/">Oberlo</a>.&nbsp;</p>
+  
+</div>
+
+<div class="four-sevenths columns medium-down--one-whole">
+
+  <ul class="footer_menu">
+      <li>
+        <a href="/pages/our-story">About Us</a>
+      </li>
+      <li>
+        <a href="/pages/contact-us">Contact Us</a>
+      </li>
+      <li>
+        <a href="/search">Search</a>
+      </li>
+  </ul>
+    <p>Sign up or our newsletter below to keep in touch with our community</p>
+  <div class="newsletter  display-first-name--true display-last-name--true">
+<form method="post" action="/contact#contact_form" id="contact_form" accept-charset="UTF-8" class="contact-form"><input type="hidden" name="form_type" value="customer"><input type="hidden" name="utf8" value="✓">
+<input type="hidden" name="contact[tags]" value="newsletter">
+<div class="input-row">
+  <input class="newsletter-half first-name" type="text" name="contact[first_name]" placeholder="First name">
+  <input class="newsletter-half last-name" type="text" name="contact[last_name]" placeholder="Last name">
+</div>
+
+    <div class="input-row">
+<input type="hidden" name="challenge" value="false">
+<input type="email" class="contact_email" name="contact[email]" required="" placeholder="Email address">
+<input type="submit" class="action_button sign_up" value="Sign Up">
+</div>
+</form>
+</div>
+<div class="footer__info" style="background-color: #cabe9b !important;">
+  <p class="credits">
+    © 2024 <a href="/" title="">Parallax Theme Aspen</a>.
+    <br>
+    <a target="_blank" rel="nofollow" href="https://www.shopify.com?utm_campaign=poweredby&amp;utm_medium=shopify&amp;utm_source=onlinestore">Powered by Shopify</a>
+  </p>
+</div>
+  <div class="payment_methods">
+      <img src="./images/visa.svg">
+      
+      <img src="./images/mastercard.svg">
+    
+      <img src="./images/american-express.svg" style="height:50px; width: 70px;">
+    
+      <img src="./images/paypal.svg" style="height:50px; width: 70px;">
+    
+      <img src="./images/payment-card-diners-club.svg" style="width: 70px; height: 50px;">
+    
+      <img src="./images/discover.svg">
+  </div>
+</div>
+
   <div class="plus1"></div>
   <div class="plus2"></div>
   

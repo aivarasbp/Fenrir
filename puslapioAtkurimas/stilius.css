@@ -8,15 +8,41 @@ body {
   overflow-wrap: break-word;
 }
 
+.header-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+.aspen-logo {
+  color:white;
+  border: 3px solid white;
+  object-fit: cover;
+  margin-top: 4px;
+  margin-left: 20px;
+  margin: 0px 10px 0px 10px;
+  padding: 2px 15px 2px 15px;
+  letter-spacing: 2px;
+  font-size: 20px;
+  font-weight: bolder;
+  letter-spacing: 4px;
+  justify-self: flex-start;
+}
+
 nav {
   position: absolute;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
   bottom: 0;
-  width: 100%;
+  width: 100vh;
   height: 60px;
   display: flex;
-  justify-content: center;
   top: 20px;
   font-size: 20px;
+  padding-left: 25%;
+  padding-right: 25%;
 }
 
 nav ul {
@@ -40,7 +66,6 @@ nav ul li a {
   font-weight: 600;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
 
 }
 
@@ -126,32 +151,29 @@ nav ul li a:hover {
 }
 
 .explore-container {
-  background-image: url("./Untitled.png");
+  background-image: url("./images/parallax.png");
   width: 100%;
   top: 50%;
   height: 100vh;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  overflow-x: hidden;
+  overflow: hidden;
   background-position: 50% 50% !important;
 }
 
-.header {
-  z-index: 10001;
-}
 
 .headerText {
   width: 80%;
   display: flex;
-  height: 30vh;
+  height: 200px;
   justify-content: flex-end;
   align-items: end;
   background-attachment: fixed;
-  margin: 0 100vh 0 100vh;
+  text-shadow: 0 0 1px rgba(0,0,0,.05), 0 1px 2px rgba(0,0,0,.3);
 
 }
 
@@ -193,20 +215,3 @@ nav ul li a:hover {
   flex-direction: row;
   background: none;
 }
-
-/* .header {
-  padding: 10px 16px;
-  background: #C3B68E;
-  color: #363636;
-}
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%
-}
-
-
-.sticky+.content {
-  padding-top: 102px;
-}  */
