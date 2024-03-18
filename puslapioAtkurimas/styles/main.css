@@ -2,7 +2,7 @@
 body {
   /* background-color: #cabe9b; */
   background-color: white;
-  font-family: "Avenir Next", sans-serif;
+  font-family: Prompt, sans-serif;
   font-weight: 400;
   font-size: 15px;
   text-transform: none;
@@ -105,10 +105,12 @@ p {
   font-weight: 1000;
 }
 
+.promotion-image a {
+  text-decoration: none;
+  color:#363636;
+}
+
 .promotion-image {
-  --color-body-text: #363636;
-  --color-body: #ffffff;
-  --color-bg: #ffffff;
   text-transform: none;
   overflow-wrap: break-word;
   text-align: center;
@@ -117,7 +119,6 @@ p {
   padding: 0;
   border: 0;
   font: inherit;
-  -webkit-backface-visibility: hidden;
   transition: filter .2s,opacity .2s;
   transform: translateZ(0);
   max-width: 100%;
@@ -188,7 +189,7 @@ p {
 }
 
 .headline {
-  font-family: "Avenir Next", sans-serif;
+  font-family: Prompt, sans-serif;
   font-style: normal;
   margin-bottom: 0.5em;
   line-height: 47px;
@@ -207,7 +208,7 @@ p {
     padding: 10px 20px;
     text-align: center;
     cursor: pointer;
-    font-family: Avenir Next, sans-serif;
+    font-family: Prompt, sans-serif;
     font-weight: 700;
     font-size: 16px;
     text-transform: uppercase;
@@ -217,14 +218,11 @@ p {
 }
 
 .title {
-  --color-body-text: #363636;
-  --color-body: #ffffff;
-  --color-bg: #ffffff;
   overflow-wrap: break-word;
   padding: 0;
   border: 0;
   font: inherit;
-  font-family: Avenir Next,sans-serif;
+  font-family: Prompt,sans-serif;
   font-style: normal;
   text-transform: uppercase;
   display: block;
@@ -242,9 +240,6 @@ p {
 }
 
 .thumbnail {
-  --color-body-text: #363636;
-  --color-body: #ffffff;
-  --color-bg: #ffffff;
   text-transform: none;
   overflow-wrap: break-word;
   color: #546a3a;
@@ -268,9 +263,6 @@ p {
 }
 
 .lazyload {
-  --color-body-text: #363636;
-  --color-body: #ffffff;
-  --color-bg: #ffffff;
   text-transform: none;
   overflow-wrap: break-word;
   color: #546a3a;
@@ -319,7 +311,7 @@ p {
 
 .money {
   display: block;
-  font-weight: 1000;
+  font-weight: 800;
   color: #363636;
   font-size: 16px;
 }
@@ -341,11 +333,7 @@ overflow: hidden;
 background-position: 50% 50% !important;
 }
 
-
 .feature-divider {
-  --color-body-text: #363636;
-  --color-body: #ffffff;
-  --color-bg: #ffffff;
   text-transform: none;
   color: #363636;
   overflow-wrap: break-word;
@@ -359,9 +347,6 @@ background-position: 50% 50% !important;
 }
 
 .one-whole {
-  --color-body-text: #363636;
-  --color-body: #ffffff;
-  --color-bg: #ffffff;
   text-transform: none;
   color: #363636;
   overflow-wrap: break-word;
@@ -378,6 +363,11 @@ background-position: 50% 50% !important;
 
 div.section {
   margin: 10px 0;
+}
+
+.sub-title a {
+  text-decoration: none;
+  color: #363636;
 }
 
 
@@ -433,7 +423,6 @@ div.section {
 .footer li a {
   color:white;
   font-weight: bold;
-  font: 16px;
   transition: 0.2s;
 }
 
@@ -450,7 +439,7 @@ width: calc(42.8571428571% - 20px);
 }
 
 .footer-title {
-  font-family: Avenir Next, sans-serif;
+  font-family: Prompt, sans-serif;
   font-weight: 800;
   font-style: normal;
   text-transform: uppercase;
@@ -471,7 +460,7 @@ width: calc(42.8571428571% - 20px);
 .social-icons a span i {
   font-size: 20px;
   color:white;
-  padding: 10px;
+  padding: 5px 10px 5px 10px;
   margin-right: 10px;
   transition: 0.2s;
   border: 1px solid white;
