@@ -1,0 +1,100 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #242424;
+}
+
+.container {
+  max-width: 1393px;
+  max-height: 1080px;
+  left: 527px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #242424;
+}
+
+.feature-divider {
+  border-top: 1px solid #3d3d3d;
+  margin-top: 20px;
+}
+
+#email, #password, #confirm_password, #name, #tel {
+  border: 1px solid #3d3d3d;
+  border-radius: 3px;
+  width: 100%;
+  height: 30px;
+  background-color: #242424;
+  padding-left: 10px;
+}
+
+#email:focus, #password:focus, #confirm_password:focus, #name:focus, #tel:focus {
+  border-color:#4b72c2;
+  background-color: #3d3d3d;
+}
+
+h1 {
+  color: white;
+margin-bottom: 10px;
+}
+
+p , .check-box {
+  color: #7F7F7F;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+}
+
+.submit-button {
+  background-color: #4b72c2 ;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  width: 200px;
+  height: 48px;
+  top: 820px;
+  left: 824px;
+  cursor: pointer;
+  
+}
+
+.lorem-ipsum {
+  margin-top: 0;
+  margin-bottom: 40px;
+  width: 625px;
+  height: 54px;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #7F7F7F; 
+  border-radius: 3px;
+  outline: none;
+  cursor: pointer;
+  vertical-align: middle; 
+}
+
+input[type="checkbox"]:checked {
+  background-color: #5cb85c; 
+  border-color: #5cb85c; 
+}
+
+.checkBox {
+margin: 20px 0 40px 0;
+}
+
+a {
+  text-decoration: none;
+  color: #4b72c2;
+}
+
+input {
+  margin-bottom: 20px;
+  padding: 5px;
+  font-size: 14px;
+}
