@@ -1,100 +1,103 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #242424;
+.elipseContainer {
+  margin-top: 250px;
 }
 
-.container {
-  max-width: 1393px;
-  max-height: 1080px;
-  left: 527px;
-  margin: 50px auto;
-  padding: 20px;
-  background-color: #242424;
+.allElipseWithButton {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
-.feature-divider {
-  border-top: 1px solid #3d3d3d;
-  margin-top: 20px;
+.allElipseWithButton img {
+  position: absolute;
 }
 
-#email, #password, #confirm_password, #name, #tel {
-  border: 1px solid #3d3d3d;
-  border-radius: 3px;
-  width: 100%;
-  height: 30px;
-  background-color: #242424;
-  padding-left: 10px;
+.smallElipse {
+  top: -160px;
 }
 
-#email:focus, #password:focus, #confirm_password:focus, #name:focus, #tel:focus {
-  border-color:#4b72c2;
-  background-color: #3d3d3d;
+.rectangle {
+  top: -150px;
 }
 
-h1 {
-  color: white;
-margin-bottom: 10px;
+.collabWord {
+  top: -45px;
 }
 
-p , .check-box {
-  color: #7F7F7F;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 27px;
-}
-
-.submit-button {
-  background-color: #4b72c2 ;
-  color: white;
+.elipseButton {
+  position:absolute;
+  bottom: -160px;
+  padding: 15px 30px;
   border: none;
-  border-radius: 4px;
-  width: 200px;
-  height: 48px;
-  top: 820px;
-  left: 824px;
-  cursor: pointer;
-  
+  border: 2px solid #9a54bc;
+  background-color: white;
+  color: #9a54bc;
+  border-radius: 5px;
 }
 
-.lorem-ipsum {
-  margin-top: 0;
-  margin-bottom: 40px;
-  width: 625px;
-  height: 54px;
+.fiveIconsContainer {
+  position: relative;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top:300px;
+  gap: 50px;
 }
 
-input[type="checkbox"] {
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  width: 20px;
-  height: 20px;
-  border: 2px solid #7F7F7F; 
-  border-radius: 3px;
-  outline: none;
-  cursor: pointer;
-  vertical-align: middle; 
+.iconsContainer {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  width: 50%;
 }
 
-input[type="checkbox"]:checked {
-  background-color: #5cb85c; 
-  border-color: #5cb85c; 
+.iconsContainer .icon {
+  width: 100px;
 }
 
-.checkBox {
-margin: 20px 0 40px 0;
+.howHelpContainer {
+  width: 100%;
 }
 
-a {
-  text-decoration: none;
-  color: #4b72c2;
+.howHelpContainer {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 150px;
+  gap:  50px;
 }
 
-input {
-  margin-bottom: 20px;
-  padding: 5px;
-  font-size: 14px;
+.howHelpButtons {
+  widht: 100%;
+  background-color: white;
+  border:none;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+  gap: 5px;
+  padding: 1-px;
+}
+
+.howHelpButtons button {
+  width: 50%;
+  padding: 6px 0 6px 0;
+  border: none;
+  background-color: transparent;
+  cursor:pointer;
+}
+
+.vendorAppBtn:hover {
+  background-color: #60267F;
+  border: 2px solid #9a54bc;
+}
+
+.supervisorBtn:hover{
+  background-color: #60267F;
+  border: 2px solid #9a54bc;
 }
