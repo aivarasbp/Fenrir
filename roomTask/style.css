@@ -7,7 +7,7 @@
 
 footer {
   width: 100%;
-  height: 600px;
+
 }
 
 
@@ -29,6 +29,7 @@ footer {
 
 .sides {
   display:flex;
+  /* background-color: #F5E1FF; */
 }
 
 .footerH1 {
@@ -37,6 +38,7 @@ footer {
 
 .footerName {
   color: #9A54BC;
+
 }
 
 .footer-image-container {

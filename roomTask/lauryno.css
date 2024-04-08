@@ -1,0 +1,131 @@
+.JoinsUs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 200px;
+  gap: 50px;
+  margin-bottom: 250px;
+}
+
+.JoinsUs h2 {
+  font-size: 25px;
+}
+
+.JoinsUs p {
+  text-align: center;
+  width: 70%;
+}
+
+.JoinsUs button {
+  border: none;
+  border: 1.48px solid #9a54bc;
+  background-color: #9a54bc;
+  color: #ffffff;
+  font-size: 12px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+.JoinsUs button:hover {
+  cursor: pointer;
+  color: #9a54bc;
+  background-color: #ffffff;
+}
+
+.picturesContainer {
+  position: relative;
+
+}
+
+.picturesContainer span {
+  color: #9a54bc;
+  font-size: 12px;
+  font-weight: 500;
+  position: absolute;
+  left: 368px;
+  top: 8px;
+}
+
+.Vector {
+  width: 900px;
+  position: absolute;
+  top: -50px;
+  left: -400px;
+}
+
+.PosImg {
+  position: absolute;
+  width: 90px;
+}
+
+.ElipsFirst {
+  left: -450px;
+  top: -110px;
+}
+
+.ElipsSecond {
+  left: -330px;
+  top: 50px;
+}
+
+.ElipsThird {
+  left: -180px;
+  top: 30px;
+}
+
+.ElipsFourth {
+  left: -60px;
+  top: 100px;
+}
+
+.ElipsFifth {
+  left: 90px;
+  top: 110px;
+}
+
+.ElipsSixth {
+  left: 250px;
+  top: 90px;
+}
+
+.ElipsSeventh {
+  left: 380px;
+  top: 110px;
+}
+
+.ElipsEigth {
+  left: 440px;
+  top: 20px;
+}
+
+.QuestionsMapsCont {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 80px;
+}
+
+.Questions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.Questions h2 {
+  margin-bottom: 20px;
+  font-size: 26px;
+}
+
+.Map {
+  margin-right: 100px;
+  width: 600px;
+}
+
+.Questions .Mail,
+.Questions span {
+  font-size: 15px;
+}
