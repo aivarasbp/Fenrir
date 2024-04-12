@@ -1,0 +1,65 @@
+body {
+  background-color: rgba(41, 10, 10, 0.918);
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.counter_div {
+  width: 30rem;
+  padding: 1rem;
+  background-color: rgba(141, 145, 147, 0.699);
+  color: white;
+  text-align: center;
+  height: 15rem;
+  box-shadow: rgba(82, 82, 203, 0.699);
+  border-radius: 3px;
+}
+
+.counter_div * {
+  margin-bottom: 2rem;
+}
+
+.count {
+  font-size: 2rem;
+}
+
+.buttons {
+  justify-content: center;
+  align-items: center;
+  display:flex;
+  gap: 15px;
+}
+
+button {
+  color: white;
+  font-size: 1rem;
+  padding:  10px 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  width: 7rem;
+  height: 2.5rem;
+}
+
+.subtract {
+  background-color: rgba(78, 2, 2, 0.699);
+}
+
+.reset {
+  background-color: rgba(138, 200, 231, 0.699);
+}
+
+.add {
+  background-color: rgba(18, 130, 31, 0.699);
+}
+
+button:hover {
+  opacity: 80%;
+  color: black;
+}

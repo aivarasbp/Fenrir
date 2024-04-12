@@ -1,0 +1,30 @@
+body {
+  background-color: rgba(150, 122, 53, 0.826) ;
+}
+
+.red {
+  display: flex;
+  border: 3px solid #dc143c;
+  background-color: #dc143c66;
+  justify-content: center;
+  align-items: center;
+  font-size: 26px;
+  color: white;
+  font-family: monospace;
+  border-radius: 10px;
+  width: 100px;
+  height: 100px;
+  margin: 30px;
+  cursor:pointer;
+}
+
+span {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-size: 20px;
+  font-weight: 1000;
+  color: rgba(255, 255, 255, 0.769);
+  transform: translateX(-50%, 50%);
+  user-select:none;
+}
