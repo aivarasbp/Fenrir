@@ -43,3 +43,12 @@ body {
 hr {
   width: 90%;
 }
+
+.check-btn {
+  padding: 10px 15px;
+  margin: 5px;
+  color: white;
+  background-color: rgb(154, 121, 186);
+  border: none;
+  border-radius: 5px;
+}

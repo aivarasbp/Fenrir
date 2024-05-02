@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bank Application</title>
+  <link rel="stylesheet" type="text/css" href="./loader.css">
+  <link rel="stylesheet" type="text/css" href="./bank.css">
+</head>
+
+<body>
+  <section class="firstSection">
+    <div class="topButtons">
+      <button id="newAccount" class="newAccountBtn" onclick="openNewAccountModal();">New account</button>
+      <button type="button" id="deleteAllAccountsBtn" class="terminateAccounts">Terminate Accounts</button>
+    </div>
+
+    <h1 contenteditable="true" class="bankTitle">Bank Application</h1>
+
+    <!-- Account List Container -->
+    <div id="accountList"></div>
+
+    <!-- New Account Modal -->
+    <div id="newAccountModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <input type="text" id="firstName" placeholder="Name">
+        <input type="text" id="lastName" placeholder="Last Name">
+        <div class="buttons">
+          <button class="createAccount" onclick="createAccount()">Create</button>
+          <button class="closeBtn" onclick="closeModal()">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Account List Container (moved here) -->
+  <div data-id="${account.id}" id="accountsContainer" class="accountsContainer">
+    <div class="loader">Loading...</div>
+  </div>
+
+  <script src="./bank.js" type="text/javascript"></script>
+
+</body>
+
+</html>
