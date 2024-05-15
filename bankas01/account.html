@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="http://127.0.0.1:5500/bankas01/styles/account.css">
+  <link rel="stylesheet" href="http://127.0.0.1:5500/bankas01/styles/sidebar.css">
+  <title>My Account</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="menu-icon-wrapper">
+      <svg width="24" height="24" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M7 8L10.5 11.5L7 15" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M13 8L16.5 11.5L13 15" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+      <nav class="sidebar">
+        <div class="content">
+          <button class="closeBtn">&#x2715</button>
+          <ul>
+            <li><a href="./account.html">My Account</a></li>
+            <li><a href="./history.html">History</a></li>
+            <li><a href="./settings.html">Settings</a></li>
+          </ul>
+        </div>
+      </nav>
+
+    </div>
+    <h1 class="bankTitle">My Wallet</h1>
+    <div class="calender-icon-wrapper">
+      <img class="calender" src="./svg/calendar.svg" alt="SVG Image">
+    </div>
+  </header>
+
+  <div class="balance-wrapper">
+    <h3 class="balanceTitle">TOTAL BALANCE</h3>
+    <h1 class="accBalance">0,00
+      <span class="currency">$</span>
+    </h1>
+  </div>
+  <div class="hr"></div>
+
+  <div class="activity-wrapper">
+    <h4>Your activity</h4>
+    <div class="expense-btn">
+      <h4>Expense</h4>
+      <img src="./svg/chevron-down.svg" alt="SVG Image">
+    </div>
+  </div>
+
+  <ul class="carousel">
+    <div class="cards-wrapper">
+      <li class="item">
+        <div class="card card1">
+          <div class="top">
+            <img class="visa" src="./svg/1153512.png" alt="VISA Icon">
+            <span>09/12</span>
+          </div>
+
+          <div class="bottom">
+            <h3>Credit Card</h3>
+            <span>&#9679&#9679&#9679&#9679&#9679&#9679 4534</span>
+          </div>
+        </div>
+      </li>
+
+      <li class="item">
+        <div class="card card2">
+          <div class="top">
+            <img class="visa" src="./svg/1153512.png" alt="VISA Icon">
+            <span>24/06</span>
+          </div>
+
+          <div class="bottom">
+            <h3>Credit Card</h3>
+            <span>&#9679&#9679&#9679&#9679&#9679&#9679 9514</span>
+          </div>
+        </div>
+      </li>
+
+      <li class="item">
+        <div class="card card3">
+          <div class="top">
+            <img class="visa" src="./svg/1153512.png" alt="VISA Icon">
+            <span>01/10</span>
+          </div>
+
+          <div class="bottom">
+            <h3>Credit Card</h3>
+            <span>&#9679&#9679&#9679&#9679&#9679&#9679 3194</span>
+          </div>
+        </div>
+      </li>
+    </div>
+  </ul>
+
+  <script src="http://127.0.0.1:5500/bankas01/script/sidebar.js"></script>
+</body>
+
+</html>

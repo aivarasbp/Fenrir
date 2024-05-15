@@ -1,0 +1,332 @@
+/* GLOBAL STYLES */
+
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Futura", "Helvetica Neue", Helvetica, Arial;
+      font-weight: 400;
+      list-style: none;
+}
+
+body {
+      height: 100%;
+      background: linear-gradient(to top left, #140E36, #C9BFB5);
+      color: white;
+}
+
+
+/* GLOBAL STYLES */
+
+/* 
+#140E36 , #402158 , #7D5683 , #C9BFB5, #E2E9FF
+*/
+
+/* HEADER */
+
+.header {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 40px 30px;
+      background: transparent;
+
+      h1 {
+            font-size: 25px;
+            flex: 2;
+            text-align: center;
+            justify-content: center;
+
+            img {
+                  width: 80px;
+                  height: auto;
+                  position: absolute;
+
+            }
+
+      }
+
+      .calender-icon-wrapper {
+            flex: 0.2;
+      }
+}
+
+.menu-icon-wrapper {
+      background: transparent;
+      border-radius: 500px;
+      height: 45px;
+      width: 45px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+
+      .dots-wrapper div {
+            border-radius: 500px;
+            height: 5px;
+            width: 5px;
+            margin: 4px 2px;
+      }
+}
+
+.calender-icon-wrapper {
+      background: transparent;
+      border-radius: 500px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 45px;
+      height: 45px;
+      cursor: pointer;
+
+      img {
+            transform: scale(0.8);
+            opacity: 1;
+      }
+}
+
+/* HEADER */
+
+
+
+.modal {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+      background-color: #fefefe;
+      margin: 15% auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 40%;
+}
+
+.close {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+}
+
+.modal-content {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      .buttons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            width: 100%;
+      }
+
+      button {
+            width: 100px;
+            color: white;
+            padding: 8px;
+      }
+
+      :hover {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+      }
+
+      .createAccount {
+            background-color: #0e4216;
+            border: none;
+      }
+
+      .closeBtn {
+            background-color: #b11e19;
+            border: none;
+      }
+}
+
+.modal {
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      position: absolute;
+      background-color: #00000070;
+      display: none;
+      justify-content: center;
+      align-items: center;
+
+      .card {
+            border: 1px solid black;
+            min-width: 600px;
+            min-height: 200px;
+            background-color: white;
+
+            .input {
+                  margin: 20px;
+
+                  div {
+                        font-size: 10px;
+                        color: gray;
+                  }
+
+                  input {
+                        width: 300px;
+                        font-size: 16px;
+                  }
+
+                  textarea {
+                        width: 300px;
+                        font-size: 16px;
+                        min-height: 150px;
+                  }
+            }
+
+            .buttons {
+                  margin: 20px;
+            }
+      }
+}
+
+.accountsContainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+}
+
+.accountModal {
+      background-color: rgba(0, 0, 0, 0.434);
+      margin: 20px 0;
+      padding: 5px;
+      border: 1px solid black;
+      border-radius: 3px;
+      color: lightgray;
+      width: 350px;
+      height: 170px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+
+      a {
+            color: white;
+      }
+
+      .accBalance {
+            font-weight: bold;
+      }
+
+      .accId {
+            font-style: italic;
+            color: white;
+      }
+
+      .transfer {
+            background: linear-gradient(to left, #f3ba65b2 0%, #f86a54b8 75%);
+            border: none;
+            border-radius: 5px;
+            color: white;
+            padding: 10px 15px;
+            font-size: 10px;
+            cursor: pointer;
+            box-shadow: 0px 5px 9px rgba(0, 0, 0, 0.4);
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.475);
+      }
+
+      .insertMoney {
+            background: linear-gradient(to left, #94f1a25f 0%, #0e42165f 75%);
+            border: none;
+            border-radius: 5px;
+            color: white;
+            padding: 10px 15px;
+            font-size: 10px;
+            cursor: pointer;
+            box-shadow: 0px 5px 9px rgba(0, 0, 0, 0.4);
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.475);
+      }
+
+      .deleteAcc {
+            background: linear-gradient(150deg, #ff171790 0%, #b11e194c 75%);
+            border: none;
+            border-radius: 5px;
+            color: white;
+            padding: 10px 15px;
+            font-size: 10px;
+            cursor: pointer;
+            box-shadow: 0px 5px 9px rgba(0, 0, 0, 0.4);
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.475);
+      }
+
+      input {
+            color: black;
+      }
+}
+
+.positive-balance {
+      color: #13cd13;
+}
+
+.zero-balance {
+      color: white;
+}
+
+.negative-balance {
+      color: red;
+}
+
+.subModal {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      background: linear-gradient(150deg, #231c48 0%, rgb(229, 215, 215) 99%);
+      color: black;
+      width: 400px;
+      height: 350px;
+      padding: 20px;
+      align-items: center;
+      border-radius: 20px;
+      font-size: 20px;
+
+      span {
+            position: relative;
+            left: 47%;
+      }
+
+      label {
+            color: white;
+      }
+
+      input {
+            width: 300px;
+            padding: 10px;
+      }
+
+      button {
+            width: 90px;
+            height: 30px;
+            align-items: center;
+            border-radius: 5px;
+            border: none;
+            background: linear-gradient(to left, #f3bb65 0%, #f86a54 75%);
+            color: white;
+            cursor: pointer;
+      }
+}

@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Futura", "Helvetica Neue", Helvetica, Arial;
+  color: white;
+  font-weight: 400;
+  list-style: none;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(to top left, #140E36, #C9BFB5);
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 40%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+  }
+
+  button {
+    width: 100px;
+    padding: 8px;
+  }
+
+  :hover {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .createAccount {
+    background-color: #0e4216;
+    border: none;
+  }
+
+  .closeBtn {
+    background-color: #b11e19;
+    border: none;
+  }
+}
+
+.modal {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  background-color: #00000070;
+  display: none;
+  justify-content: center;
+  align-items: center;
+
+  .card {
+    border: 1px solid black;
+    min-width: 600px;
+    min-height: 200px;
+    background-color: white;
+
+    .input {
+      margin: 20px;
+
+      div {
+        font-size: 10px;
+        color: gray;
+      }
+
+      input {
+        width: 300px;
+        font-size: 16px;
+      }
+
+      textarea {
+        width: 300px;
+        font-size: 16px;
+        min-height: 150px;
+      }
+    }
+
+    .buttons {
+      margin: 20px;
+    }
+  }
+}
+
+.accountsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.accountModal {
+  background-color: rgba(0, 0, 0, 0.434);
+  margin: 20px 0;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 3px;
+  color: lightgray;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+
+  .accBalance {
+    display: none;
+  }
+
+  .accId {
+    font-style: italic;
+  }
+
+  .accBtn {
+    display: none;
+  }
+
+  .transfer {
+    background-color: #f7b500;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 15px;
+    font-size: 10px;
+    cursor: pointer;
+    box-shadow: 0px 5px 9px rgba(0, 0, 0, 0.4);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.475);
+  }
+
+  .insertMoney {
+    background-color: #0e4216;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 15px;
+    font-size: 10px;
+    cursor: pointer;
+    box-shadow: 0px 5px 9px rgba(0, 0, 0, 0.4);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.475);
+  }
+
+  .deleteAcc {
+    background-color: #b11e19;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 15px;
+    font-size: 10px;
+    cursor: pointer;
+    box-shadow: 0px 5px 9px rgba(0, 0, 0, 0.4);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.475);
+  }
+}
+
+button {
+  color: black;
+}

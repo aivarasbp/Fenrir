@@ -29,6 +29,7 @@ const loadAccounts = () => {
   accounts.forEach(account => {
     const accountElement = document.createElement('div');
     accountElement.innerHTML = `
+      <div class="accountModal">
       <div>ID: ${account.id}</div>
       <div>Name: ${account.firstName} ${account.lastName}</div>
       <div>Balance: ${account.balance}</div>
@@ -36,6 +37,7 @@ const loadAccounts = () => {
         <button class="transfer">Transfer</button>
         <button class="insertMoney">Insert Money</button>
         <button class="dltAcc">Delete</button>
+      </div>
       </div>
       <hr>
     `;

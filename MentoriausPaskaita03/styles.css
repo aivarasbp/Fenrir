@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 400px;
+  height: 400px;
+}
+
+body {
+  background: linear-gradient(30deg, skyblue 0%, black 95%);
+  height: 100vh;
+}
+
+h1 {
+  color: white;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+button {
+  position: absolute;
+  padding: 5px 10px;
+  top: 230px;
+  opacity: 1%;
+  cursor: pointer;
+}
+
+p {
+  position: absolute;
+  top: 335px;
+  height: 85px;
+  font-size: 19px;
+  max-width: 380px;
+  overflow-y: scroll;
+}

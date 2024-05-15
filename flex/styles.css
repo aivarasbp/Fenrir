@@ -1,0 +1,43 @@
+.container {
+  width: 900px;
+  height: 700px;
+  background: linear-gradient(90deg, rgb(137, 43, 226), rgb(0, 0, 0));
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  gap: 1px;
+
+  .item1 {
+    height: 200px;
+    width: 200px;
+    background: linear-gradient(120deg, rgb(222, 217, 227), rgb(109, 163, 65));
+    color: white;
+    font-size: 80px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+
+  .item2 {
+    height: 200px;
+    width: 200px;
+    background: linear-gradient(150deg, rgba(0, 238, 255, 0.699), rgb(255, 0, 242));
+    color: white;
+    font-size: 80px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+
+  .item3 {
+    height: 200px;
+    width: 200px;
+    background: linear-gradient(90deg, rgba(234, 68, 106, 0.735), rgb(215, 164, 12));
+    color: white;
+    font-size: 80px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+}
