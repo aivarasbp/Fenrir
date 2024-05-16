@@ -1,4 +1,11 @@
-import 'bootstrap'
+import 'bootstrap';
 
-console.log('this works');
+window.addEventListener('load', _ => {
 
+  if (document.querySelector('.with-csr')) {
+
+    const checkedInput = document.querySelector(`#shape${shape}`);
+    checkedInput.checked = true;
+
+  }
+});
