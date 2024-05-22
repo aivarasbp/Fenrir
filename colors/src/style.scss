@@ -6,6 +6,10 @@
   align-items: center;
   width: 100%;
 
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+
   &__color {
     display: flex;
     align-items: flex-start;
@@ -116,4 +120,8 @@
       text-decoration: underline;
     }
   }
+}
+
+.alert {
+  transition: 0.125s ease-in-out;
 }

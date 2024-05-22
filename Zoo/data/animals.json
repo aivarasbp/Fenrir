@@ -1,0 +1,122 @@
+[
+  {
+    "id": "ba5609e0-b106-40fb-96a4-40c1d593f927",
+    "animal": {
+      "name": "Lion",
+      "species": "Panthera leo",
+      "age": 10
+    }
+  },
+  {
+    "id": "119dcca1-778c-4240-b5ed-8f3605c9e806",
+    "animal": {
+      "name": "Tiger",
+      "species": "Panthera tigris",
+      "age": 12
+    }
+  },
+  {
+    "id": "4f812071-c537-4a74-9137-7935c47ff4ed",
+    "animal": {
+      "name": "Elephant",
+      "species": "Loxodonta africana",
+      "age": 15
+    }
+  },
+  {
+    "id": "8aaa4ebb-e039-42fb-a755-f03a30c8c35c",
+    "animal": {
+      "name": "Giraffe",
+      "species": "Giraffa camelopardalis",
+      "age": 20
+    }
+  },
+  {
+    "id": "804fd637-9aca-454a-a1be-3026b20a209c",
+    "animal": {
+      "name": "Zebra",
+      "species": "Equus zebra",
+      "age": 8
+    }
+  },
+  {
+    "id": "c2d23755-ac73-402d-9f97-3796658e6aae",
+    "animal": {
+      "name": "Hippopotamus",
+      "species": "Hippopotamus amphibius",
+      "age": 25
+    }
+  },
+  {
+    "id": "08bcfbec-943e-4732-add3-94f4175e99ee",
+    "animal": {
+      "name": "Crocodile",
+      "species": "Crocodylus niloticus",
+      "age": 30
+    }
+  },
+  {
+    "id": "c02afdfe-c066-4582-9be2-2a5a2ec4f6c8",
+    "animal": {
+      "name": "Flamingo",
+      "species": "Phoenicopterus",
+      "age": 5
+    }
+  },
+  {
+    "id": "5219dc73-9a0c-4bc2-925b-6285ec6e41b2",
+    "animal": {
+      "name": "Penguin",
+      "species": "Aptenodytes forsteri",
+      "age": 3
+    }
+  },
+  {
+    "id": "0767b22f-773a-4b6e-b90b-bb69a52461bf",
+    "animal": {
+      "name": "Kangaroo",
+      "species": "Macropus",
+      "age": 7
+    }
+  },
+  {
+    "id": "8c22c515-748e-48b5-9b6a-b309984c4647",
+    "animal": {
+      "name": "Koala",
+      "species": "Phascolarctos cinereus",
+      "age": 4
+    }
+  },
+  {
+    "id": "8615a788-d2fb-42ad-9f9d-7a081e67f21a",
+    "animal": {
+      "name": "Kookaburra",
+      "species": "Dacelo novaeguineae",
+      "age": 2
+    }
+  },
+  {
+    "id": "5b13ac4e-f95e-4dfe-ba7f-200d23536ff7",
+    "animal": {
+      "name": "Platypus",
+      "species": "Ornithorhynchus anatinus",
+      "age": 6
+    }
+  },
+  {
+    "id": "f3a4d06e-5895-4e8f-a562-5bd196fb0a62",
+    "animal": {
+      "name": "Wallaby",
+      "species": "Macropus",
+      "age": 5
+    }
+  },
+  {
+    "id": "9fc07667-da0c-4181-95cd-5738eaad3ca4",
+    "animal": {
+      "name": "Dingo",
+      "species": "Canis lupus dingo",
+      "age": 8
+    }
+  }
+]

@@ -1,0 +1,27 @@
+{
+  "dependencies": {
+    "axios": "^1.7.2",
+    "body-parser": "^1.20.2",
+    "express": "^4.19.2",
+    "laravel-mix": "^6.0.49",
+    "sass": "^1.77.2",
+    "stack": "^0.1.0",
+    "uuid": "^9.0.1"
+  },
+  "name": "zoo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "resolve-url-loader": "^5.0.0",
+    "sass-loader": "^12.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node --watch index.js",
+    "dev": "npx mix watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

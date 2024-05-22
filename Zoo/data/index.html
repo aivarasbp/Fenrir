@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="http://localhost/style.css">
+  <title>ZOO</title>
+</head>
+
+<body>
+
+  <main>
+    <div class="top">
+
+      <form action="/add-animal" method="POST" class="inputs">
+        <input type="text" name="animal[name]" placeholder="Name" required>
+        <input type="text" name="animal[species]" placeholder="Species" required>
+        <input type="number" name="animal[age]" placeholder="Age" required>
+        <button type="submit">Add Animal</button>
+      </form>
+
+      <div class="actionButtons">
+        <form action="/seed-animals" method="POST" style="margin-top: 20px;">
+          <button type="submit">Seed Animals</button>
+        </form>
+
+        <form action="/delete-all-animals" method="POST" style="margin-top: 20px;">
+          <button type="submit">Delete All Animals</button>
+        </form>
+      </div>
+      <div class="sortItems">
+        <a class="sort" href="http://localhost?sort=asc">Sort A-Z</a>
+        <a class="sort" href="http://localhost?sort=desc">Sort Z-A</a>
+      </div>
+
+    </div>
+
+    <div class="content">
+      <ul>
+        {{LIST}}
+      </ul>
+    </div>
+  </main>
+
+</body>
+
+</html>
