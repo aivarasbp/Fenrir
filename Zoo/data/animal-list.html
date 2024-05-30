@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="http://localhost/animal_list.css">
+  <title>ZOO</title>
+</head>
+
+<body>
+
+  {{NAV}}
+
+  {{MSG}}
+
+  <main>
+    <div class="top">
+
+      <div class="actionButtons">
+        <form action="/seed-animals" method="POST" style="margin-top: 20px;">
+          <button type="submit" class="seed">Seed List</button>
+        </form>
+
+        <form action="/delete-all-animals" method="POST" style="margin-top: 20px;">
+          <button type="submit" class="delete">Delete List</button>
+        </form>
+      </div>
+      <div class="sortItems">
+        <a class="sort" href="http://localhost/animal-list/?sort=asc">Sort A-Z</a>
+        <a class="sort" href="http://localhost/animal-list/?sort=desc">Sort Z-A</a>
+      </div>
+
+    </div>
+
+    <div class="content">
+      <ul>
+        {{LIST}}
+      </ul>
+    </div>
+  </main>
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('.btn-danger').forEach(button => {
+        const selectedAnimalId = button.dataset.id; // Get the ID when delete button is clicked
+        button.addEventListener('click', (event) => {
+          event.preventDefault(); // Prevent the default action of the anchor tag
+          console.log('Selected Animal ID:', selectedAnimalId); // Debugging
+          // Redirect to the delete confirmation page
+          window.location.href = `/delete-confirm/${selectedAnimalId}`;
+        });
+      });
+    });
+
+  </script>
+
+</body>
+
+</html>

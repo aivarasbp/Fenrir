@@ -1,0 +1,210 @@
+body {
+  margin: 0;
+  background: #00467F;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #A5CC82, #00467F);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #A5CC82, #00467F);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  font-size: 20px;
+}
+
+button {
+  font-size: 15px;
+  font-family: 'Montserrat', sans-serif;
+  padding: 10px;
+  position: relative;
+  cursor: pointer;
+  color: var(--white);
+  z-index: 1;
+  border-radius: 5px;
+  border: none;
+
+  &:after {
+
+    content: '';
+    background-color: rgba(51, 50, 50, 0.671);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    clip-path: circle(0% at 50% 50%);
+    transition: all cubic-bezier(0, 0.96, 0.58, 1.1) 0.8s;
+    z-index: -1;
+
+  }
+
+  &:hover {
+
+    &:after {
+
+      clip-path: circle(100% at 50% 50%);
+      transition: all cubic-bezier(0, 0.96, 0.58, 1.1) 2s;
+      border-radius: 5px;
+    }
+  }
+}
+
+.seed {
+  background-color: rgb(255, 183, 0);
+}
+
+
+.delete {
+  background-color: rgba(255, 0, 0, 0.591);
+}
+
+main {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  .top {
+    height: 200px;
+    padding: 20px;
+    margin: 20px;
+    border-bottom: 2px solid black;
+
+    .actionButtons {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      margin-left: 0px;
+
+      button {
+        width: 145px;
+      }
+    }
+
+    a {
+      background-color: rgba(0, 0, 0, 0.676);
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 5px;
+      transition: ease-in-out 0.2s;
+    }
+
+    a:hover {
+      color: rgba(0, 0, 0, 0.498);
+      background-color: white;
+    }
+  }
+
+  .sortItems {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 5px;
+    cursor: pointer;
+  }
+
+  .content {
+    display: flex;
+  }
+
+  a {
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 80px;
+  }
+}
+
+.sort {
+  margin: 5px;
+  cursor: pointer;
+
+  :hover {
+    color: pink;
+  }
+
+  ;
+}
+
+
+
+/* Updated CSS */
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  /* Change to column */
+  gap: 20px;
+  width: 100%;
+}
+
+li {
+  display: flex;
+  flex-direction: row;
+  /* Change to row */
+  align-items: center;
+  /* Align items vertically */
+  background-color: #33333390;
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+}
+
+li>* {
+  flex: 1;
+  /* Let items grow equally */
+}
+
+span {
+  margin-right: 10px;
+}
+
+button {
+  margin-left: 10px;
+  /* Add margin between buttons */
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: #333;
+}
+
+/* Navbar Styles */
+.navbar {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Card Styles */
+.card {
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+// .listBtns {
+//   display: flex;
+//   flex-direction: row;
+//   justify-content: space-between;
+//   align-items: center;
+//   margin-top: 5px;
+
+//   button {
+//     width: 60px;
+//     color: white;
+//   }
+// }

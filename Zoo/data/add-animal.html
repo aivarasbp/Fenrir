@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="http://localhost/style.css">
+  <title>ZOO</title>
+</head>
+
+<body>
+
+  {{NAV}}
+
+  {{MSG}}
+
+  <main>
+    <div class="top">
+      <h1 class="d-flex justify-content-center" style="color:white; font-weight: bold;">Add animal to the list</h1>
+      <form action="/add-animal" method="POST" class="inputs">
+        <input type="text" name="animal[name]" class="{{ERROR_CLASS}}" placeholder="Name" required>
+        <input type="text" name="animal[species]" placeholder="Species" required>
+        <input type="number" name="animal[age]" placeholder="Age" required class="inputAge">
+        <button type="submit" class="add">Add Animal</button>
+      </form>
+  </main>
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
